@@ -1,0 +1,99 @@
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-p8mjf-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-s8hlm[0m
+{"level":"warn","ts":1586409862.318189,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586409862.3189952,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-p8mjf-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-prlrr[0m
+{"level":"warn","ts":1586409863.3826818,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1586409863.38388,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-p8mjf-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-p8mjf-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-cb-kubecd-environment-bootv3-st-p8mjf-jlzdd[0m
+{"level":"warn","ts":1586409868.4843092,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586409869.5027087,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/cb-kubecd/environment-bootv3-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-p8mjf-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:3f19012fedd3daa8ec44f22cb9f30b5f587d2ea5,3:6a50804abc5f20c2503bb56e41cdf9e69541c9c3
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 6a50804abc5f20c2503bb56e41cdf9e69541c9c3: 3f19012fedd3daa8ec44f22cb9f30b5f587d2ea5:
+DEBUG: ran git fetch --unshallow origin 6a50804abc5f20c2503bb56e41cdf9e69541c9c3: 3f19012fedd3daa8ec44f22cb9f30b5f587d2ea5: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 3f19012fedd3daa8ec44f22cb9f30b5f587d2ea5
+DEBUG: ran git reset --hard 3f19012fedd3daa8ec44f22cb9f30b5f587d2ea5 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 6a50804abc5f20c2503bb56e41cdf9e69541c9c3
+DEBUG: ran git merge 6a50804abc5f20c2503bb56e41cdf9e69541c9c3 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 3f19012fedd3daa8ec44f22cb9f30b5f587d2ea5..HEAD
+Merged SHA 6a50804abc5f20c2503bb56e41cdf9e69541c9c3 with commit message 'chore: Promote v2-nodey to version 0.0.6' into base branch master
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-p8mjf-1[0m stage [32mpr-checks[0m and container [32mstep-verify-secrets[0m
+created directory /secrets/jx-boot
+loaded Secrets from: local in namespace ********** with Secret jx-boot-secrets
+exported Secrets to file: /secrets/jx-boot/secrets.yaml
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-p8mjf-1[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-p8mjf-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
+Adding repo dev http://chartmuseum-jx.35.205.96.40.nip.io
+"dev" has been added to your repositories
+
+Adding repo stable https://kubernetes-charts.storage.googleapis.com
+"stable" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching stable/nginx-ingress
+Linting release=nginx-ingress, chart=/tmp/757661499/nginx-ingress/1.34.2/stable/nginx-ingress/nginx-ingress
+==> Linting /tmp/757661499/nginx-ingress/1.34.2/stable/nginx-ingress/nginx-ingress
+
+1 chart(s) linted, 0 chart(s) failed
+
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-p8mjf-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
+Adding repo dev http://chartmuseum-jx.35.205.96.40.nip.io
+"dev" has been added to your repositories
+
+Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Adding repo jenkins-x http://chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Fetching jenkins-x/jxboot-helmfile-resources
+Fetching dev/v2-nodey
+Fetching jenkins-x/lighthouse
+Fetching jenkins-x/tekton
+Linting release=jxboot-helmfile-resources, chart=/tmp/324454774/jxboot-helmfile-resources/0.0.127/jenkins-x/jxboot-helmfile-resources/jxboot-helmfile-resources
+==> Linting /tmp/324454774/jxboot-helmfile-resources/0.0.127/jenkins-x/jxboot-helmfile-resources/jxboot-helmfile-resources
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=lighthouse, chart=/tmp/324454774/lighthouse/0.0.493/jenkins-x/lighthouse/lighthouse
+==> Linting /tmp/324454774/lighthouse/0.0.493/jenkins-x/lighthouse/lighthouse
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=tekton, chart=/tmp/324454774/tekton/0.0.51/jenkins-x/tekton/tekton
+==> Linting /tmp/324454774/tekton/0.0.51/jenkins-x/tekton/tekton
+
+1 chart(s) linted, 0 chart(s) failed
+
+Linting release=v2-nodey, chart=/tmp/324454774/v2-nodey/0.0.6/dev/v2-nodey/v2-nodey
+==> Linting /tmp/324454774/v2-nodey/0.0.6/dev/v2-nodey/v2-nodey
+
+1 chart(s) linted, 0 chart(s) failed
+
