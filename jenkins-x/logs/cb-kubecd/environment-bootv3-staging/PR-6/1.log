@@ -1,0 +1,36 @@
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-qlszc-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-dg6vg[0m
+{"level":"warn","ts":1586506872.9835079,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586506872.9841936,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-qlszc-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-8n9mb[0m
+{"level":"warn","ts":1586506873.950724,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1586506873.9520943,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-qlszc-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-qlszc-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-cb-kubecd-environment-bootv3-st-qlszc-sn98q[0m
+{"level":"warn","ts":1586506880.0499256,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586506881.0989544,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/cb-kubecd/environment-bootv3-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-qlszc-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:015d8f8da57ed9ec57c19c4c9140f378f4beab0b,6:01e1976f65043268c5f9993e75aa7bcdde0e8b5a
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 01e1976f65043268c5f9993e75aa7bcdde0e8b5a: 015d8f8da57ed9ec57c19c4c9140f378f4beab0b:
+DEBUG: ran git fetch --unshallow origin 01e1976f65043268c5f9993e75aa7bcdde0e8b5a: 015d8f8da57ed9ec57c19c4c9140f378f4beab0b: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 015d8f8da57ed9ec57c19c4c9140f378f4beab0b
+DEBUG: ran git reset --hard 015d8f8da57ed9ec57c19c4c9140f378f4beab0b in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 01e1976f65043268c5f9993e75aa7bcdde0e8b5a
+DEBUG: ran git merge 01e1976f65043268c5f9993e75aa7bcdde0e8b5a in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 015d8f8da57ed9ec57c19c4c9140f378f4beab0b..HEAD
+Merged SHA 01e1976f65043268c5f9993e75aa7bcdde0e8b5a with commit message 'chore: Promote v2-nodey3 to version 0.0.3' into base branch master
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-qlszc-1[0m stage [32mpr-checks[0m and container [32mstep-verify-secrets[0m
+created directory /secrets/jx-boot
+error: failed to create vault client: failed to find Secret vault-unseal-keys in namespace **********: secrets "vault-unseal-keys" not found
+[31m
+Pipeline failed on stage 'pr-checks' : container 'step-verify-secrets'. The execution of the pipeline has stopped.[0m
