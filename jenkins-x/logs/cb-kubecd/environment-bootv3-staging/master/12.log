@@ -1,31 +1,32 @@
 
-Showing logs for build [32mcb-kubecd-environment-bootv3-st-bx99z-12[0m stage [32mrelease[0m and container [32mstep-credential-initializer-vscd7[0m
-{"level":"warn","ts":1586849420.1226583,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1586849420.123392,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-credential-initializer-gq8q8[0m
+{"level":"warn","ts":1586850822.9424055,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586850822.9428577,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mcb-kubecd-environment-bootv3-st-bx99z-12[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-w6pzx[0m
-{"level":"warn","ts":1586849421.122208,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1586849421.1239092,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-vqrvb[0m
+{"level":"warn","ts":1586850823.39006,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1586850823.3912346,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mcb-kubecd-environment-bootv3-st-bx99z-12[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mcb-kubecd-environment-bootv3-st-bx99z-12[0m stage [32mrelease[0m and container [32mstep-git-source-cb-kubecd-environment-bootv3-st-bx99z-qb66f[0m
-{"level":"warn","ts":1586849429.2866707,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1586849430.410789,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/cb-kubecd/environment-bootv3-staging.git @ v0.0.15 in path /workspace/source"}
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-git-source-cb-kubecd-environment-bootv3-st-hsghq-j2xnj[0m
+{"level":"warn","ts":1586850831.5651531,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586850832.6723034,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/cb-kubecd/environment-bootv3-staging.git @ v0.0.16 in path /workspace/source"}
 
-Showing logs for build [32mcb-kubecd-environment-bootv3-st-bx99z-12[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:06a82bd33b461235f25f89a1a420c40292b7783b
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:a2ec1238e48b561e1c3caa452634bd2b6d1151cf
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mcb-kubecd-environment-bootv3-st-bx99z-12[0m stage [32mrelease[0m and container [32mstep-verify-secrets[0m
-created directory /secrets/**-boot
-loaded Secrets from: local in namespace ** with Secret **-boot-secrets
-exported Secrets to file: /secrets/**-boot/secrets.yaml
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-verify-secrets[0m
+created directory /secrets/jx-boot
+saved vault cert file to /tmp/828903890/vault-ca.crt
+loaded Secrets from: Vault Secret Manager for vault vault at https://vault:8200
+exported Secrets to file: /secrets/jx-boot/secrets.yaml
 
-Showing logs for build [32mcb-kubecd-environment-bootv3-st-bx99z-12[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
 Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
 
-Showing logs for build [32mcb-kubecd-environment-bootv3-st-bx99z-12[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
 no need to reconnect to cluster
 writing the following to the OWNERS file for the development environment repository:
 approvers:
@@ -38,13 +39,12 @@ reviewers:
 - daveconde
 WARNING: Vault is enabled and TLS is not enabled. This means your secrets will be sent to and from your cluster in the clear. See https://jenkins-x.io/docs/getting-started/setup/boot/#ingress for more information
 WARNING: TLS is not enabled so your webhooks will be called using HTTP. This means your webhook secret will be sent to your cluster in the clear. See https://jenkins-x.io/docs/getting-started/setup/boot/#ingress for more information
-Verifying the kubernetes cluster before we try to boot Jenkins X in namespace: **-staging
+Verifying the kubernetes cluster before we try to boot Jenkins X in namespace: **********
 Trying to lazily create any missing resources to get the current cluster ready to boot Jenkins X
 Verifying Ingress...
 Clearing the domain 35.189.205.219.nip.io as when using auto-DNS domains we need to regenerate to ensure its always accurate in case the cluster or ingress service is recreated
 
-WARNING: there is no context defined in your Kubernetes configuration - we may be inside a test case or pod?
-No kube context - probably in a unit test or pod?
+Using namespace '**********' from context named '' on server ''.
 
 Verifying Storage...
 WARNING: Your requirements have not enabled cloud storage for logs - we recommend enabling this for kubernetes provider gke
@@ -53,16 +53,284 @@ WARNING: Your requirements have not enabled cloud storage for repository - we re
 WARNING: Your requirements have not enabled cloud storage for backup - we recommend enabling this for kubernetes provider gke
 Storage configuration looks good
 
-Validating Kaniko secret in namespace **-staging
-attempting to lazily create the deploy namespace **-staging
-Configuring Kaniko service account bootv3-staging-ko for project jstrachan-multicluster
-Service Account exists
-Downloading service account key
-Exceeds the maximum number of keys on service account bootv3-staging-ko
-Cleaning up the keys of the service account bootv3-staging-ko
-Cannot delete the key 215060b750ca205ee951502bfe8ce101c43ad08f from service account bootv3-staging-ko: deleting the key '215060b750ca205ee951502bfe8ce101c43ad08f'from service account 'bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com': failed to run 'gcloud iam service-accounts keys delete 215060b750ca205ee951502bfe8ce101c43ad08f --iam-account bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com --project jstrachan-multicluster --quiet' command in directory '', output: 'ERROR: (gcloud.iam.service-accounts.keys.delete) PERMISSION_DENIED: Permission iam.serviceAccountKeys.delete is required to perform this operation on service account key projects/-/serviceAccounts/bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com/keys/215060b750ca205ee951502bfe8ce101c43ad08f.'
-Cannot delete the key 51ced5ae332ec2e5dfc259f00c9bbda1f914a451 from service account bootv3-staging-ko: deleting the key '51ced5ae332ec2e5dfc259f00c9bbda1f914a451'from service account 'bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com': failed to run 'gcloud iam service-accounts keys delete 51ced5ae332ec2e5dfc259f00c9bbda1f914a451 --iam-account bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com --project jstrachan-multicluster --quiet' command in directory '', output: 'ERROR: (gcloud.iam.service-accounts.keys.delete) PERMISSION_DENIED: Permission iam.serviceAccountKeys.delete is required to perform this operation on service account key projects/-/serviceAccounts/bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com/keys/51ced5ae332ec2e5dfc259f00c9bbda1f914a451.'
-Cannot delete the key 158a219bc96f76aa2abb4551b4eba8c95b4da938 from service account bootv3-staging-ko: deleting the key '158a219bc96f76aa2abb4551b4eba8c95b4da938'from service account 'bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com': failed to run 'gcloud iam service-accounts keys delete 158a219bc96f76aa2abb4551b4eba8c95b4da938 --iam-account bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com --project jstrachan-multicluster --quiet' command in directory '', output: 'ERROR: (gcloud.iam.service-accounts.keys.delete) PERMISSION_DENIED: Permission iam.serviceAccountKeys.delete is required to perform this operation on service account key projects/-/serviceAccounts/bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com/keys/158a219bc96f76aa2abb4551b4eba8c95b4da938.'
-error: failed to lazily create the kaniko secret in: **-staging: creating the service account: creating service account key: creating a new service account key: failed to run 'gcloud iam service-accounts keys create /tmp/gke763166698/bootv3-staging-ko.key.json --iam-account bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com --project jstrachan-multicluster' command in directory '', output: 'ERROR: (gcloud.iam.service-accounts.keys.create) PERMISSION_DENIED: Permission iam.serviceAccountKeys.create is required to perform this operation on service account projects/-/serviceAccounts/bootv3-staging-ko@jstrachan-multicluster.iam.gserviceaccount.com.'
-[31m
-Pipeline failed on stage 'release' : container 'step-verify-preinstall'. The execution of the pipeline has stopped.[0m
+Validating Kaniko secret in namespace **********
+
+verified there is a ConfigMap config in namespace **********
+verified there is a ConfigMap plugins in namespace **********
+Cluster looks good, you are ready to 'jx boot' now!
+
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
+Jenkins X CRDs upgraded with success
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-generate-helmfile[0m
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-helmfile-system[0m
+Adding repo dev http://chartmuseum-jx.35.205.96.40.nip.io
+"dev" has been added to your repositories
+
+Adding repo stable https://kubernetes-charts.storage.googleapis.com
+"stable" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Affected releases are:
+  nginx-ingress (stable/nginx-ingress) UPDATED
+
+Upgrading release=nginx-ingress, chart=stable/nginx-ingress
+Release "nginx-ingress" has been upgraded. Happy Helming!
+NAME: nginx-ingress
+LAST DEPLOYED: Tue Apr 14 07:54:18 2020
+NAMESPACE: nginx
+STATUS: deployed
+REVISION: 7
+TEST SUITE: None
+NOTES:
+The nginx-ingress controller has been installed.
+It may take a few minutes for the LoadBalancer IP to be available.
+You can watch the status by running 'kubectl --namespace nginx get services -o wide -w nginx-ingress-controller'
+
+An example Ingress that makes use of the controller:
+
+  apiVersion: extensions/v1beta1
+  kind: Ingress
+  metadata:
+    annotations:
+      kubernetes.io/ingress.class: nginx
+    name: example
+    namespace: foo
+Listing releases matching ^nginx-ingress$
+  spec:
+    rules:
+      - host: www.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: exampleService
+                servicePort: 80
+              path: /
+    # This section is only required if TLS is to be enabled for the Ingress
+    tls:
+        - hosts:
+            - www.example.com
+          secretName: example-tls
+
+If TLS is enabled for the Ingress, a Secret containing the certificate and key must also be provided:
+
+  apiVersion: v1
+  kind: Secret
+  metadata:
+    name: example-tls
+    namespace: foo
+  data:
+    tls.crt: <base64 encoded cert>
+    tls.key: <base64 encoded key>
+  type: kubernetes.io/tls
+
+nginx-ingress	nginx    	7       	2020-04-14 07:54:18.844851906 +0000 UTC	deployed	nginx-ingress-1.34.2	0.30.0     
+
+
+UPDATED RELEASES:
+NAME            CHART                  VERSION
+nginx-ingress   stable/nginx-ingress    1.34.2
+
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-verify-ingress[0m
+Waiting to find the external host name of the ingress controller Service in namespace nginx with name nginx-ingress-controller
+No domain flag provided so using default 35.189.205.219.nip.io to generate Ingress rules
+defaulting the domain to 35.189.205.219.nip.io and modified /workspace/source/jx-requirements.yml
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-helmfile-apps[0m
+Adding repo dev http://chartmuseum-jx.35.205.96.40.nip.io
+"dev" has been added to your repositories
+
+Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Adding repo jenkins-x http://chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+
+Updating repo
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "dev" chart repository
+...Successfully got an update from the "jenkins-x" chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+
+Affected releases are:
+  jxboot-helmfile-resources (jenkins-x/jxboot-helmfile-resources) UPDATED
+  lighthouse (jenkins-x/lighthouse) UPDATED
+  tekton (jenkins-x/tekton) UPDATED
+  v2-nodey (dev/v2-nodey) UPDATED
+  v2-nodey3 (dev/v2-nodey3) UPDATED
+
+Upgrading release=tekton, chart=jenkins-x/tekton
+Upgrading release=lighthouse, chart=jenkins-x/lighthouse
+Upgrading release=v2-nodey, chart=dev/v2-nodey
+Upgrading release=jxboot-helmfile-resources, chart=jenkins-x/jxboot-helmfile-resources
+Upgrading release=v2-nodey3, chart=dev/v2-nodey3
+Listing releases matching ^v2-nodey$
+Release "v2-nodey" has been upgraded. Happy Helming!
+NAME: v2-nodey
+LAST DEPLOYED: Tue Apr 14 07:54:29 2020
+NAMESPACE: **********
+STATUS: deployed
+REVISION: 6
+TEST SUITE: None
+NOTES:
+Get the application URL by running these commands:
+
+kubectl get ingress v2-nodey-v2-nodey
+
+v2-nodey	**********	6       	2020-04-14 07:54:29.970392503 +0000 UTC	deployed	v2-nodey-0.0.8	0.0.8      
+
+Release "lighthouse" has been upgraded. Happy Helming!
+NAME: lighthouse
+LAST DEPLOYED: Tue Apr 14 07:54:33 2020
+NAMESPACE: **********
+STATUS: deployed
+REVISION: 7
+TEST SUITE: None
+NOTES:
+Get the application URL by running these commands:
+
+kubectl get ingress lighthouse-lighthouse
+
+Listing releases matching ^lighthouse$
+lighthouse	**********	7       	2020-04-14 07:54:33.695881496 +0000 UTC	deployed	lighthouse-0.0.493	0.0.493    
+
+Release "v2-nodey3" has been upgraded. Happy Helming!
+NAME: v2-nodey3
+LAST DEPLOYED: Tue Apr 14 07:54:29 2020
+NAMESPACE: **********
+STATUS: deployed
+REVISION: 3
+TEST SUITE: None
+NOTES:
+Get the application URL by running these commands:
+
+kubectl get ingress v2-nodey3-v2-nodey3
+
+Listing releases matching ^v2-nodey3$
+v2-nodey3	**********	3       	2020-04-14 07:54:29.901244261 +0000 UTC	deployed	v2-nodey3-0.0.6	0.0.6      
+
+Release "tekton" has been upgraded. Happy Helming!
+NAME: tekton
+LAST DEPLOYED: Tue Apr 14 07:54:33 2020
+NAMESPACE: **********
+STATUS: deployed
+REVISION: 7
+TEST SUITE: None
+NOTES:
+Tekton Pipelines
+
+Listing releases matching ^tekton$
+tekton	**********	7       	2020-04-14 07:54:33.742486414 +0000 UTC	deployed	tekton-0.0.51	           
+
+Listing releases matching ^jxboot-helmfile-resources$
+Release "jxboot-helmfile-resources" has been upgraded. Happy Helming!
+NAME: jxboot-helmfile-resources
+LAST DEPLOYED: Tue Apr 14 07:54:33 2020
+NAMESPACE: **********
+STATUS: deployed
+REVISION: 7
+TEST SUITE: None
+
+jxboot-helmfile-resources	**********	7       	2020-04-14 07:54:33.645380819 +0000 UTC	deployed	jxboot-helmfile-resources-0.0.127	           
+
+
+UPDATED RELEASES:
+NAME                        CHART                                 VERSION
+v2-nodey                    dev/v2-nodey                            0.0.8
+lighthouse                  jenkins-x/lighthouse                  0.0.493
+v2-nodey3                   dev/v2-nodey3                           0.0.6
+tekton                      jenkins-x/tekton                       0.0.51
+jxboot-helmfile-resources   jenkins-x/jxboot-helmfile-resources   0.0.127
+
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-git-creds[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-verify-jenkins-x-environment[0m
+Storing the requirements in team settings in the dev environment
+Validating git repository for dev environment at URL https://github.com/cb-kubecd/environment-bootv3-staging.git
+Environment git repositories look good
+
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-install-pipelines[0m
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-update-webhooks[0m
+DEBUG: Finding service url for hook in namespace **********
+DEBUG: Couldn't find service url, attempting to look up via ingress
+DEBUG: found service url http://hook-jx.35.189.205.219.nip.io
+DEBUG: getting vault name for namespace **********
+DEBUG: system vault name from config 
+DEBUG: vault name jx-vault-bootv3-stagin generated from cluster bootv3-staging
+DEBUG: vault jx-vault-bootv3-stagin not found in namespace **********, err is vaults.vault.banzaicloud.com "jx-vault-bootv3-stagin" not found
+DEBUG: No auth config found in vault for gitAuth.yaml. Trying to load it from Kubernetes secrets.
+DEBUG: getting vault name for namespace **********
+DEBUG: system vault name from config 
+DEBUG: vault name jx-vault-bootv3-stagin generated from cluster bootv3-staging
+DEBUG: vault jx-vault-bootv3-stagin not found in namespace **********, err is vaults.vault.banzaicloud.com "jx-vault-bootv3-stagin" not found
+DEBUG: No auth config found in vault for gitAuth.yaml. Trying to load it from Kubernetes secrets.
+Updating webhooks for Owner: cb-kubecd and Repository: environment-bootv3-staging in git server: https://github.com
+Checking hooks for repository cb-kubecd/environment-bootv3-staging with user ******************
+Found matching hook for url http://hook-jx.35.189.205.219.nip.io/hook
+Updating GitHub webhook for cb-kubecd/environment-bootv3-staging for url http://hook-jx.35.189.205.219.nip.io/hook
+
+Showing logs for build [32mcb-kubecd-environment-bootv3-st-hsghq-12[0m stage [32mrelease[0m and container [32mstep-verify-installation[0m
+verifying the Jenkins X installation in namespace **********
+verifying pods
+Checking pod statuses
+POD                                                        STATUS
+jx-boot-8757g                                              Succeeded
+jxboot-helmfile-resources-controllerbuild-7fd45857c5-kcjf5 Running
+jxboot-helmfile-resources-controllerrole-7cbc5bcc6-nj6vc   Running
+jxboot-helmfile-resources-gcactivities-1586844000-5gdtx    Succeeded
+jxboot-helmfile-resources-gcactivities-1586845800-z4dh9    Succeeded
+jxboot-helmfile-resources-gcpods-1586844000-ssw6k          Succeeded
+jxboot-helmfile-resources-gcpods-1586845800-ql9mh          Succeeded
+jxboot-helmfile-resources-gcpreviews-1586844000-2wp6s      Succeeded
+lighthouse-lighthouse-79c6947669-9ssqm                     Running
+lighthouse-lighthouse-79c6947669-mc4z6                     Running
+tekton-pipelines-controller-666488cbd5-r4f5m               Running
+tide-5f89c84c58-d4kcd                                      Running
+v2-nodey-v2-nodey-6dbd4f84d-jv774                          Running
+v2-nodey3-v2-nodey3-5cb6cdb966-c5kpq                       Running
+v2-nodey3-v2-nodey3-85948b6658-46pfk                       Pending
+vault-0                                                    Running
+vault-configurer-5c859966c8-s9wnd                          Running
+WARNING: the following pods are not ready:
+Pending: v2-nodey3-v2-nodey3-85948b6658-46pfk
+
+Waiting 30m0s for the pods to become ready...
+
+WARNING: retrying after error: the following pods are not ready:
+Pending: v2-nodey3-v2-nodey3-85948b6658-46pfk
+POD                                                        STATUS
+jx-boot-8757g                                              Succeeded
+jxboot-helmfile-resources-controllerbuild-7fd45857c5-kcjf5 Running
+jxboot-helmfile-resources-controllerrole-7cbc5bcc6-nj6vc   Running
+jxboot-helmfile-resources-gcactivities-1586844000-5gdtx    Succeeded
+jxboot-helmfile-resources-gcactivities-1586845800-z4dh9    Succeeded
+jxboot-helmfile-resources-gcpods-1586844000-ssw6k          Succeeded
+jxboot-helmfile-resources-gcpods-1586845800-ql9mh          Succeeded
+jxboot-helmfile-resources-gcpreviews-1586844000-2wp6s      Succeeded
+lighthouse-lighthouse-79c6947669-9ssqm                     Running
+lighthouse-lighthouse-79c6947669-mc4z6                     Running
+tekton-pipelines-controller-666488cbd5-r4f5m               Running
+tide-5f89c84c58-d4kcd                                      Running
+v2-nodey-v2-nodey-6dbd4f84d-jv774                          Running
+v2-nodey3-v2-nodey3-5cb6cdb966-c5kpq                       Running
+vault-0                                                    Running
+vault-configurer-5c859966c8-s9wnd                          Running
+Verifying the git config
+Verifying username ****************** at git server github at https://github.com
+Found 3 organisations in git server https://github.com: cb-kubecd, jenkins-x-labs, jenkins-x-labs-bdd-tests
+Validated pipeline user ****************** on git server https://github.com
+Git tokens seem to be setup correctly
+Installation is currently looking: GOOD
