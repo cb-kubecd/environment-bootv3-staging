@@ -9,6 +9,7 @@ cluster:
   - rawlingsj
   - daveconde
   environmentGitOwner: cb-kubecd
+  environmentGitPublic: true
   gitKind: github
   gitName: github
   gitServer: https://github.com
@@ -45,7 +46,7 @@ ingress:
     production: false
 kaniko: true
 repository: nexus
-secretStorage: vault
+secretStorage: local
 storage:
   backup:
     enabled: false
